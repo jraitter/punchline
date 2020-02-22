@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Punch-Line</title>
+</head>
+
+<body class="bg-light d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="card text-left bg-light">
+                    <h3 class="card-header">Guess the Punchline</h3>
+                    <div class="card-body pl-2">
+                        <h5 class="card-title">Category: <span id="type"></span></h5>
+                        <h5 class="card-title">Question: </h5><span id="setup"></span>
+                        <h5 class="card-title">Answer: </h5><span id="punchline"></span>
+                    </div>
+                    <div class="card-footer text-muted d-flex justify-content-between">
+                        <button type="button" class="btn btn-link text-primary pl-0"
+                            onclick="app.gameController.showAnswer()">Show
+                            answer</button>
+                        <button type="button" class="btn btn-link text-primary"
+                            onclick="app.gameController.getApiGamedata()">Get Next
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="game-data"></div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"
+        integrity="sha256-bd8XIKzrtyJ1O5Sh3Xp3GiuMIzWC42ZekvrMMD4GxRg=" crossorigin="anonymous"></script>
+    <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
