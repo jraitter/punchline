@@ -3,7 +3,7 @@ import Gamedata from "../Models/Gamedata.js";
 
 // @ts-ignore
 const _api = axios.create({
-  baseURL: "//official-joke-api.appspot.com/",
+  baseURL: "https://official-joke-api.appspot.com/",
   timeout: 3000
 });
 
